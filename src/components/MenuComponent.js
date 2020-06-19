@@ -18,11 +18,9 @@ function Menu(props){
     });
 
     return (
-        <div className="container">
             <div className="row">
                 {menu}
             </div>
-        </div>
     );
 }
 
