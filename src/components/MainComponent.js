@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import Menu from './MenuComponent';
 import { DISHES } from '../shared/dishes';
-import { DishdetailComponent } from './DishdetailComponent';
+import { Dishdetail } from './DishdetailComponent';
 
 class MainComponent extends Component {
   constructor(props) {
@@ -28,7 +28,7 @@ class MainComponent extends Component {
         </Navbar>
         <div className="container">
                 <Menu dishes={this.state.dishes} onDishSelect={(dishId)=>this.onDishSelect(dishId)} />
-                <DishdetailComponent selectedDish={this.state.dishes.filter((dish)=>{return dish.id===this.state.selectedDish})[0]}/>
+                <Dishdetail selectedDish={this.state.dishes.filter((dish)=>{return dish.id===this.state.selectedDish})[0]}/>
         </div>
       </div>
     </div>

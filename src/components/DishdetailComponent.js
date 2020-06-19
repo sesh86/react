@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardImg, CardText, CardBody,CardTitle } from 'reactstrap';
-export function DishdetailComponent(props) {
+export const Dishdetail=(props) =>{
     return (
         <div className="row">
         <div  className="col-12 col-md-5 m-1">
@@ -13,7 +13,7 @@ export function DishdetailComponent(props) {
     );
   }
 
-function renderComments(dish){
+const renderComments=(dish)=>{
     if (dish!=null){
     let comms=dish.comments;
     const menu = comms.map((comm) => {
@@ -27,7 +27,7 @@ function renderComments(dish){
     }
 }
 
-function renderDish(dish){
+const renderDish=(dish)=>{
     if (dish != null)
         return(
             <Card>
