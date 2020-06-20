@@ -18,9 +18,6 @@ function About(props) {
             </Media>
           </Media>            
         );        
-        return (
-            <p>Leader {leader.image}</p>
-        );
     });
 
     return(
