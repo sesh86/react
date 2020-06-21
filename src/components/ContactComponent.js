@@ -15,6 +15,7 @@ class Contact extends Component {
         alert('Current State is: ' + JSON.stringify(values));
         // event.preventDefault();
     }
+
     render() {
         const required = (val) => val && val.length;
         const maxLength = (len) => (val) => !(val) || (val.length <= len);
@@ -33,7 +34,7 @@ class Contact extends Component {
                     <hr />
                 </div>                
             </div>
-
+                  
             <div className="row row-content">
                    <div className="col-12">
                       <h3>Send us your Feedback</h3>
